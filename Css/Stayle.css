@@ -3,8 +3,8 @@
      scroll-behavior: smooth;
 }
 
-::selection{
-background-color: #cb904d;
+::selection {
+     background-color: #cb904d;
 }
 
 body {
@@ -153,9 +153,13 @@ body {
 }
 
 .product-info {
-     display: flex;
      align-items: center;
      gap: 15px;
+}
+
+span {
+     padding-left: 10px;
+     font-size: 20px;
 }
 
 .product-img {
