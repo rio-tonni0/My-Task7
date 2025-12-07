@@ -1,0 +1,209 @@
+* {
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+::selection{
+background-color: #cb904d;
+}
+
+body {
+     margin: 0px;
+     background-color: #f3f0f3;
+     color: #ffffff;
+     width: 100%;
+     overflow: hidden;
+}
+
+.continer {
+     display: grid;
+     grid-template-columns: repeat(11, 1fr);
+     grid-template-rows: repeat(10, 1fr);
+     gap: 15px;
+     margin: 11px;
+     height: 80vh;
+}
+
+/* =============== Dash =============== */
+
+.said-dash {
+     grid-column: span 2 / span 2;
+     grid-row: span 10 / span 10;
+     background-color: #1c2d36;
+     width: 100%;
+     padding: 15px 15px 15px 15px;
+     border-radius: 15px;
+     height: 97vh;
+     box-shadow: 5px 5px 15px #cb904d;
+}
+
+.head {
+     margin-bottom: 8em;
+}
+
+.home {
+     margin-bottom: 4em;
+}
+.products {
+     margin-bottom: 4em;
+}
+.order {
+     margin-bottom: 4em;
+}
+
+.saids {
+     padding-left: 10px;
+}
+
+.Sai {
+     text-decoration: none;
+     color: white;
+}
+
+.Sai:hover {
+     transition: 0.3s ease;
+     color: #cb904d;
+}
+
+/* =============== Header =============== */
+
+.header {
+     grid-column: span 9 / span 9;
+     grid-column-start: 3;
+     width: 100%;
+     background-color: #1c2d36;
+     padding: 10px;
+     border-radius: 15px;
+     box-shadow: 5px 5px 15px #cb904d;
+
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.info {
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: space-between;
+     align-items: center;
+     gap: 15px;
+}
+
+#search {
+     padding: 7px 5px;
+     margin-left: 10px;
+     border-radius: 10px;
+     width: 190px;
+     outline: none;
+     gap: 20px;
+     box-shadow: 2px 2px 10px #f3f0f345;
+}
+
+#profile {
+     width: 50px;
+     margin-right: 10px;
+     border-radius: 50%;
+     border: 2px solid #f3f0f3;
+     box-shadow: 2px 2px 10px #f3f0f345;
+}
+
+/* =============== Cards =============== */
+
+.Cards {
+     grid-column: 3 / span 9;
+     grid-row: 2 / span 2;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+}
+
+.card {
+     background-color: #1c2d36;
+     border-radius: 20px;
+     padding: 10px;
+     box-shadow: 1px 2px 10px #cb904d;
+     text-align: center;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+}
+
+.nums {
+     font-size: 17px;
+}
+
+/* =============== Products =============== */
+
+.products-0 {
+     grid-column: span 9 / span 9;
+     grid-row: span 6 / span 6;
+     grid-column-start: 3;
+     grid-row-start: 4;
+     width: 100%;
+     background-color: #1c2d36;
+     border-radius: 20px;
+     box-shadow: 1px 2px 10px #cb904d;
+     padding: 20px;
+}
+
+.product-data {
+     padding-left: 10px;
+     text-align: left;
+}
+
+.product-info {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+}
+
+.product-img {
+     width: 40px;
+     height: 40px;
+     object-fit: cover;
+     border-radius: 5px;
+}
+
+.pro-head {
+     padding: 0 0 15px 0;
+     margin-left: 0;
+}
+
+table {
+     width: 100%;
+     color: #ffffff;
+}
+
+thead tr,
+tbody tr {
+     display: grid;
+     grid-template-columns: 1.5fr 1fr 1fr 0.5fr;
+     padding: 20px 15px;
+     text-align: left;
+}
+
+tbody tr {
+     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th,
+td {
+     padding: 0 10px;
+}
+
+/* =============== Footer =============== */
+
+.footer {
+     grid-column: span 9 / span 9;
+     grid-column-start: 3;
+     grid-row-start: 10;
+     background-color: #1c2d36;
+     border-radius: 20px;
+     margin-bottom: 10px;
+     box-shadow: 1px 2px 10px #cb904d;
+     text-align: center;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+}
